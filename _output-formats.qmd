@@ -1,0 +1,12 @@
+- HTML
+  + reveal.js
+  + website
+  + book
+- PDF
+  + report
+  + book
+  + beamer
+- DOCX
+- PPTX
+- Jupyter Notebooks
+- [and more...](https://quarto.org/docs/output-formats/all-formats.html)

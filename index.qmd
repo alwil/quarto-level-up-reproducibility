@@ -1,0 +1,296 @@
+---
+format:
+  revealjs:
+    navigation-mode: vertical
+    theme: tud-theme.scss
+    #logo: images/TUDelft_logo_rgb.png
+    footer: DOI
+    preview-links: true
+    title-slide-attributes: 
+      data-background-color: "#00A6D6"
+      data-background-image: "images/TUDelft_logo_white.png"
+      data-background-size: "20%"
+      data-background-position: "90% 100%"
+example-title: Title goes here
+example-author: Me
+example-keywords: this; is; science!
+---
+
+# About Quarto {.inverse}
+
+## Quarto {.center}
+
+An open-source scientific and technical publishing system built on Pandoc.
+
+Author content using markdown.
+
+## Quarto: Language support {.center}
+
+- Python
+- R 
+- Julia
+- Observable
+
+## Quarto: Output formats {auto-animate="true"}
+
+{{< include _output-formats.qmd >}}
+
+## Quarto: Output formats {.smaller auto-animate="true"}
+
+{{< include _output-formats.qmd >}}
+
+## Quarto: Extensions {.scrollable}
+
+{{< include _extensions.qmd >}}
+
+## Bring your own IDE
+
+- RStudio
+- VSCode
+- Neovim
+- Jupyter
+
+## {background-iframe="https://quarto.org/docs/guide/"}
+
+::: {.callout-tip}
+Extensive documentation!
+:::
+
+---
+
+<!-- keep short: should be more hands-on -->
+![GIPHY](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGFmZThjMTZhMjk3ZGQyM2FmMWFkZTAzNGJjMjQ2OTQ2YTkwYTRkNyZjdD1n/3o6nUXmbq14JmHAnn2/giphy.gif)
+
+# Resources {.inverse}
+
+<!-- claudiu's mining project -->
+
+<!-- websites: R cafe, Rbanism -->
+
+<!-- this presentation -->
+
+<!-- Bjorn dissertation -->
+
+# The hands-on part (if you missed it) {.inverse}
+
+<!-- Walkthrough of code -->
+
+## Quarto: the basics
+
+We'll start out with a blank Quarto document (*filename.qmd*)
+
+First we need to populate the YAML header
+
+```yml
+---
+title: {{< meta example-title >}}
+author: {{< meta example-author >}}
+---
+```
+
+
+## Quarto: the basics {auto-animate="true"}
+
+We'll start out with a blank Quarto document (*filename.qmd*)
+
+Then add some markdown content
+
+```yaml
+---
+title: {{< meta example-title >}}
+author: {{< meta example-author >}}
+---
+```
+
+## Quarto: the basics {auto-animate="true"}
+
+We'll start out with a blank Quarto document (*filename.qmd*)
+
+Then add some markdown content
+
+```md
+---
+title: {{< meta example-title >}}
+author: {{< meta example-author >}}
+---
+
+## Introdution
+
+This paper will make an important impact in a specific field of science, despite having "negative" results.
+
+The aims of this paper are:
+
+- something important
+- some other important things
+- maybe a few less important things
+```
+
+## Quarto: the basics
+
+Now render the document.
+
+You can either **render** from your IDE,
+
+or using the command line 
+
+```sh
+quarto render filename.qmd # defaults to html output
+quarto render filename.qmd --to pdf
+quarto render filename.qmd --to docx
+```
+
+[HTML](examples/_example-R_final.html)
+
+## Quarto: the basics
+
+Dynamic variables[ - don't repeat yourself!]{.fragment}
+
+. . .
+
+metadata shortcode  
+`{{{< meta name-of-variable >}}}`
+
+. . .
+
+Include external content  
+`{{< includes filename2.qmd >}}`
+
+. . .
+
+Include custom variables from *\_variables.yml*  
+`{{{< var name-of-variable >}}}`  
+
+::: {.callout-important}
+Using *\_variables.yml* only works with Quarto projects
+
+Otherwise you will get the error `?var:<varname>`
+:::
+
+## Quarto: the basics {auto-animate="true"}
+
+You can add keywords to the yaml header and include them in the text
+
+````{.md code-line-numbers="4,7"}
+---
+title: {{< meta example-title >}}
+author: {{< meta example-author >}}
+keywords: {{< meta example-keywords >}}
+---
+
+{{{< meta keywords >}}}
+
+## Introdution
+
+This paper will make an important impact in a specific field of science, 
+despite having "negative" results.
+
+The aims of this paper are:
+
+- something important
+- some other important things
+- maybe a few less important things
+
+````
+
+## Quarto: the basics {auto-animate="true"}
+
+And maybe you already wrote the materials and methods section
+
+````{.md code-line-numbers="20"}
+---
+title: Title goes here
+author: Me
+keywords: {{< meta example-keywords >}}
+---
+
+{{{< meta keywords >}}}
+
+## Introdution
+
+This paper will make an important impact in a specific field of science, 
+despite having "negative" results.
+
+The aims of this paper are:
+
+- something important
+- some other important things
+- maybe a few less important things
+
+{{< includes _matmet.qmd >}}
+
+````
+
+## Quarto: the basics {auto-animate="true" .smaller}
+
+Of course the real power lies in seemlessly combining text and code (with output).
+
+Using any of the supported languages, like R
+
+{{< include _example-doc.txt >}}
+
+## Quarto: the basics {auto-animate="true" .smaller}
+
+Of course the real power lies in seemlessly combining text and code (with output).
+
+Using any of the supported languages, like R
+
+{{< include _example-doc-R.txt >}}
+
+## Quarto: the basics {auto-animate="true" .smaller}
+
+Of course the real power lies in seemlessly combining text and code (with output).
+
+Using any of the supported languages, like R, or Python 🐍
+
+{{< include _example-doc-py.txt >}}
+
+## Quarto: the basics {auto-animate="true" .smaller}
+
+````{.md code-line-numbers="42-44"}
+---
+title: {{< meta example-title >}}
+author: {{< meta example-author >}}
+keywords: {{< meta example-keywords >}}
+---
+
+{{{< meta keywords >}}}
+
+## Introdution
+
+This paper will make an important impact in a specific field of science, 
+despite having "negative" results.
+
+The aims of this paper are:
+
+- something important
+- some other important things
+- maybe a few less important things
+
+{{< includes _matmet.qmd >}}
+
+## Results
+
+```{{python}}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+## Conclusion
+
+Quarto is awesome!
+
+-
+````

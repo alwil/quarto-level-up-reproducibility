@@ -1,0 +1,16 @@
+{
+  "hash": "d6c6ba6da45f9c226e681e8461094309",
+  "result": {
+    "markdown": "---\noutput-file: example-R\n---\n\n{{< meta keywords >}}\n\n\n\n## Introdution\n\nThis paper will make an important impact in a specific field of science, \ndespite having \"negative\" results.\n\nThe aims of this paper are:\n\n- something important\n- some other important things\n- maybe a few less important things\n\n\n{{< includes _matmet.qmd >}}\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n::: {.cell-output-display}\n![Temperature and ozone level.](_example-R_final_files/figure-html/fig-airquality-1.png){#fig-airquality width=672}\n:::\n:::",
+    "supporting": [
+      "_example-R_final_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

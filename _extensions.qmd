@@ -1,0 +1,18 @@
+Extensions by both developers and the community
+
+- shortcodes
+  + fontawesome
+  + social-embeds
+  + ...
+- filters
+  + lightbox
+  + shinylive
+  + include-code-files
+  + ...
+- formats
+  + letter-pdf
+  + rladies-revealjs
+  + blackboard-revealjs
+  + ...
+
+[More extensions](https://quarto.org/docs/extensions/listing-filters.html)
