@@ -1,8 +1,8 @@
 Extensions by both developers and the community
 
 - shortcodes
-  + fontawesome
-  + social-embeds
+  + fontawesome {{< fa thumbs-up >}}
+  + social-embeds {{< fa brands mastodon >}}
   + ...
 - filters
   + lightbox
@@ -13,6 +13,7 @@ Extensions by both developers and the community
   + letter-pdf
   + rladies-revealjs
   + blackboard-revealjs
+  + journal templates
   + ...
 
 [More extensions](https://quarto.org/docs/extensions/listing-filters.html)

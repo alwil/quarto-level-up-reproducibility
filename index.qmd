@@ -3,7 +3,7 @@ format:
   revealjs:
     navigation-mode: vertical
     theme: tud-theme.scss
-    #logo: images/TUDelft_logo_rgb.png
+    logo: images/TUDelft_logo_rgb.png
     footer: DOI
     preview-links: true
     title-slide-attributes: 
@@ -11,14 +11,14 @@ format:
       data-background-image: "images/TUDelft_logo_white.png"
       data-background-size: "20%"
       data-background-position: "90% 100%"
-example-title: Title goes here
-example-author: Me
+example-title: 'Catchy title or pun: the actual title'
+example-author: Me and al
 example-keywords: this; is; science!
 ---
 
 # About Quarto {.inverse}
 
-## Quarto {.center}
+## Quarto: What is it? {.center}
 
 An open-source scientific and technical publishing system built on Pandoc.
 
@@ -39,6 +39,8 @@ Author content using markdown.
 
 {{< include _output-formats.qmd >}}
 
+[No, seriously, see the full list [here](https://quarto.org/docs/output-formats/all-formats.html)]{.fragment}
+
 ## Quarto: Extensions {.scrollable}
 
 {{< include _extensions.qmd >}}
@@ -50,11 +52,11 @@ Author content using markdown.
 - Neovim
 - Jupyter
 
-## {background-iframe="https://quarto.org/docs/guide/"}
+## Extensive documentation
 
-::: {.callout-tip}
-Extensive documentation!
-:::
+[](https://quarto.org/docs/guide/)
+
+## {background-iframe="https://quarto.org/docs/guide/"}
 
 ---
 
@@ -63,13 +65,24 @@ Extensive documentation!
 
 # Resources {.inverse}
 
+## Example projects
+
 <!-- claudiu's mining project -->
+
+<!-- Bjorn dissertation -->
+
+## Example websites
 
 <!-- websites: R cafe, Rbanism -->
 
-<!-- this presentation -->
+[{{< fa globe >}} R Cafe](delft-rcafe.github.io/home/Index.html)
 
-<!-- Bjorn dissertation -->
+[{{< fa globe >}} Rbanism](https://rbanism.github.io/Rbanism/)
+
+## Example presentation
+
+<!-- this presentation -->
+[{{< fa brands github >}} This presentation](https://github.com/bbartholdy/quarto-level-up-reproducibility)
 
 # The hands-on part (if you missed it) {.inverse}
 
@@ -77,7 +90,7 @@ Extensive documentation!
 
 ## Quarto: the basics
 
-We'll start out with a blank Quarto document (*filename.qmd*)
+We'll start out with a blank Quarto document (*{{< var filename >}}*)
 
 First we need to populate the YAML header
 
@@ -91,7 +104,7 @@ author: {{< meta example-author >}}
 
 ## Quarto: the basics {auto-animate="true"}
 
-We'll start out with a blank Quarto document (*filename.qmd*)
+We'll start out with a blank Quarto document (*{{< var filename >}}*)
 
 Then add some markdown content
 
@@ -104,11 +117,58 @@ author: {{< meta example-author >}}
 
 ## Quarto: the basics {auto-animate="true"}
 
-We'll start out with a blank Quarto document (*filename.qmd*)
+We'll start out with a blank Quarto document (*{{< var filename >}}*)
 
 Then add some markdown content
 
-```md
+{{< include _example-intro.txt >}}
+
+## Quarto: the basics
+
+Now render the document.
+
+You can either **render** from your IDE,
+
+or using the command line 
+
+```sh
+quarto render {{< var filename >}} # defaults to html output
+quarto render {{< var filename >}} --to pdf
+quarto render {{< var filename >}} --to docx
+```
+
+[HTML](examples/example-R.html)
+
+## Quarto: the basics
+
+Dynamic variables[ - don't repeat yourself!]{.fragment}
+
+. . .
+
+metadata shortcode  
+`{{{< meta name-of-variable >}}}`
+
+. . .
+
+Include external content (e.g. qmd or md files)  
+`{{< includes name-of-file.ext >}}`
+
+. . .
+
+Include custom variables from *\_variables.yml*  
+`{{{< var name-of-variable >}}}`  
+
+::: {.callout-important}
+Using *\_variables.yml* only works with Quarto projects
+
+Otherwise you will get the error `?var:<varname>`
+:::
+
+## Quarto: the basics {auto-animate="true"}
+
+You can add keywords to the yaml header and include them in the text
+
+````{.md code-line-numbers="6-14"}
 ---
 title: {{< meta example-title >}}
 author: {{< meta example-author >}}
@@ -123,48 +183,8 @@ The aims of this paper are:
 - something important
 - some other important things
 - maybe a few less important things
-```
 
-## Quarto: the basics
-
-Now render the document.
-
-You can either **render** from your IDE,
-
-or using the command line 
-
-```sh
-quarto render filename.qmd # defaults to html output
-quarto render filename.qmd --to pdf
-quarto render filename.qmd --to docx
-```
-
-[HTML](examples/_example-R_final.html)
-
-## Quarto: the basics
-
-Dynamic variables[ - don't repeat yourself!]{.fragment}
-
-. . .
-
-metadata shortcode  
-`{{{< meta name-of-variable >}}}`
-
-. . .
-
-Include external content  
-`{{< includes filename2.qmd >}}`
-
-. . .
-
-Include custom variables from *\_variables.yml*  
-`{{{< var name-of-variable >}}}`  
-
-::: {.callout-important}
-Using *\_variables.yml* only works with Quarto projects
-
-Otherwise you will get the error `?var:<varname>`
-:::
+````
 
 ## Quarto: the basics {auto-animate="true"}
 
@@ -220,7 +240,7 @@ The aims of this paper are:
 
 ````
 
-## Quarto: the basics {auto-animate="true" .smaller}
+## Quarto: the basics {auto-animate="true"}
 
 Of course the real power lies in seemlessly combining text and code (with output).
 
@@ -240,13 +260,19 @@ Using any of the supported languages, like R
 
 Of course the real power lies in seemlessly combining text and code (with output).
 
-Using any of the supported languages, like R, or Python 🐍
+Using any of the supported languages, like R, or Python
 
 {{< include _example-doc-py.txt >}}
 
 ## Quarto: the basics {auto-animate="true" .smaller}
 
-````{.md code-line-numbers="42-44"}
+Added bonus: built-in cross-referencing
+
+{{< include _example-doc-py2.txt >}}
+
+## Quarto: the basics {auto-animate="true" .smaller}
+
+````md
 ---
 title: {{< meta example-title >}}
 author: {{< meta example-author >}}
@@ -287,10 +313,12 @@ ax.set_rticks([0.5, 1, 1.5, 2])
 ax.grid(True)
 plt.show()
 ```
+Blah, blah, blah, something important. Don't believe me? Check out @fig-polar!
 
 ## Conclusion
 
 Quarto is awesome!
 
--
 ````
+
+Play around in the [sandbox](link-to-binder)

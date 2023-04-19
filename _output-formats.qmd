@@ -1,12 +1,35 @@
-- HTML
+:::: {.columns}
+
+::: {.column}
+
+- Documents
+  + HTML
+  + PDF
+  + DOCX
+  + MD
+  + Jupyter
+
+- Presentations
   + reveal.js
-  + website
-  + book
-- PDF
-  + report
-  + book
   + beamer
-- DOCX
-- PPTX
-- Jupyter Notebooks
-- [and more...](https://quarto.org/docs/output-formats/all-formats.html)
+  + powerpoint
+
+:::
+
+::: {.column}
+
+- Books
+  + HTML
+  + PDF
+  + EPUB
+  + DOCX
+  + AsciiDoc
+
+- Websites
+  + HTML (Bootstrap 5)
+  + publish directly to Netlify
+
+:::
+::::
+
+And many more.
