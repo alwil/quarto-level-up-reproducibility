@@ -17,9 +17,12 @@ The aims of this paper are:
 
 {{< includes _matmet.qmd >}}
 
+## Results
+
 ```{r}
 #| label: fig-airquality
 #| fig-cap: "Temperature and ozone level."
+#| code-fold: true
 #| warning: false
 #| echo: true
 
@@ -29,3 +32,9 @@ ggplot(airquality, aes(Temp, Ozone)) +
   geom_point() + 
   geom_smooth(method = "loess")
 ```
+
+Blah, blah, blah, something important. Don't believe me? Check out @fig-airquality!
+
+## Conclusion
+
+Quarto is awesome!
