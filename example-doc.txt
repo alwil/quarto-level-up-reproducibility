@@ -1,0 +1,23 @@
+````{.md code-line-numbers="5,8,21"}
+---
+title: {{< meta example-title >}}
+author: {{< meta example-author >}}
+keywords: {{< meta example-keywords >}}
+---
+
+{{{< meta keywords >}}}
+
+## Introdution
+
+This paper will make an important impact in a specific field of science, 
+despite having "negative" results.
+
+The aims of this paper are:
+
+- something important
+- some other important things
+- maybe a few less important things
+
+{{< includes _matmet.qmd >}}
+
+````
