@@ -11,9 +11,6 @@ format:
       data-background-image: "images/TUDelft_logo_white.png"
       data-background-size: "20%"
       data-background-position: "90% 100%"
-example-title: 'Catchy title or pun: the actual title'
-example-author: Me and al
-example-keywords: this; is; science!
 ---
 
 # About Quarto {.inverse}
@@ -63,11 +60,15 @@ Author content using markdown.
 
 ## Compared to existing options
 
-RMarkdown
+RMarkdown for R users and Jupyter for Python users
 
-Jupyter
+Quarto more streamlined and specifically tailored to scientific output
 
-Quarto more streamlined
+- built-in functionality
+  + cross-refs
+  + author metadata
+- more output options
+  + including Jupyter
 
 ---
 
@@ -76,7 +77,7 @@ Quarto more streamlined
 
 # Resources {.inverse}
 
-## Example projects
+## Example projects {.center}
 
 <!-- claudiu's mining project -->
 
@@ -85,7 +86,7 @@ Quarto more streamlined
 <!-- Bjorn dissertation -->
 [{{< fa globe >}}](https://myphd.netlify.app) [{{< fa brands github >}}](https://github.com/bbartholdy/endgame) PhD dissertation
 
-## Example websites
+## Example websites {.center}
 
 <!-- websites: R cafe, Rbanism -->
 
@@ -93,7 +94,7 @@ Quarto more streamlined
 
 [{{< fa globe >}}](https://rbanism.github.io/Rbanism/) Rbanism
 
-## Example presentation
+## Example presentation {.center}
 
 <!-- this presentation -->
 [{{< fa brands github >}}](https://github.com/bbartholdy/quarto-level-up-reproducibility) This presentation
@@ -104,7 +105,7 @@ Quarto more streamlined
 
 ## Quarto: the basics
 
-We'll start out with a blank Quarto document (*{{< var filename >}}*)
+We'll start out with a blank Quarto document (*{{< meta example-filename >}}*)
 
 First we need to populate the YAML header
 
@@ -118,7 +119,7 @@ author: {{< meta example-author >}}
 
 ## Quarto: the basics {auto-animate="true"}
 
-We'll start out with a blank Quarto document (*{{< var filename >}}*)
+We'll start out with a blank Quarto document (*{{< meta example-filename >}}*)
 
 Then add some markdown content
 
@@ -131,11 +132,11 @@ author: {{< meta example-author >}}
 
 ## Quarto: the basics {auto-animate="true"}
 
-We'll start out with a blank Quarto document (*{{< var filename >}}*)
+We'll start out with a blank Quarto document (*{{< meta example-filename >}}*)
 
 Then add some markdown content
 
-{{< include example-intro.txt >}}
+{{< include examples/example-intro.txt >}}
 
 ## Quarto: the basics
 
@@ -146,12 +147,10 @@ You can either **render** from your IDE,
 or using the command line 
 
 ```sh
-quarto render {{< var filename >}} # defaults to html output
-quarto render {{< var filename >}} --to pdf
-quarto render {{< var filename >}} --to docx
+quarto render {{< meta example-filename >}} # defaults to html output
+quarto render {{< meta example-filename >}} --to pdf
+quarto render {{< meta example-filename >}} --to docx
 ```
-
-[HTML](examples/example-R.html)
 
 ## Quarto: the basics
 
@@ -165,7 +164,7 @@ metadata shortcode
 . . .
 
 Include external content (e.g. qmd or md files)  
-`{{< includes name-of-file.ext >}}`
+`{{{< include name-of-file.ext >}}}`
 
 . . .
 
@@ -182,23 +181,7 @@ Otherwise you will get the error `?var:<varname>`
 
 You can add keywords to the yaml header and include them in the text
 
-````{.md code-line-numbers="6-14"}
----
-title: {{< meta example-title >}}
-author: {{< meta example-author >}}
----
-
-## Introdution
-
-This paper will make an important impact in a specific field of science, despite having "negative" results.
-
-The aims of this paper are:
-
-- something important
-- some other important things
-- maybe a few less important things
-
-````
+{{< include examples/example-intro.txt >}}
 
 ## Quarto: the basics {auto-animate="true"}
 
@@ -232,8 +215,8 @@ And maybe you already wrote the materials and methods section
 
 ````{.md code-line-numbers="20"}
 ---
-title: Title goes here
-author: Me
+title: {{< meta example-title >}}
+author: {{< meta example-author >}}
 keywords: {{< meta example-keywords >}}
 ---
 
@@ -250,17 +233,9 @@ The aims of this paper are:
 - some other important things
 - maybe a few less important things
 
-{{< includes _matmet.qmd >}}
+{{{< include _matmet.qmd >}}}
 
 ````
-
-## Quarto: the basics {auto-animate="true"}
-
-Of course the real power lies in seemlessly combining text and code (with output).
-
-Using any of the supported languages, like R
-
-{{< include example-doc.txt >}}
 
 ## Quarto: the basics {auto-animate="true" .smaller}
 
@@ -268,7 +243,15 @@ Of course the real power lies in seemlessly combining text and code (with output
 
 Using any of the supported languages, like R
 
-{{< include example-doc-R.txt >}}
+{{< include examples/example-doc.txt >}}
+
+## Quarto: the basics {auto-animate="true" .smaller}
+
+Of course the real power lies in seemlessly combining text and code (with output).
+
+Using any of the supported languages, like R
+
+{{< include examples/example-doc-R.txt >}}
 
 ## Quarto: the basics {auto-animate="true" .smaller}
 
@@ -276,17 +259,17 @@ Of course the real power lies in seemlessly combining text and code (with output
 
 Using any of the supported languages, like R, or Python
 
-{{< include example-doc-py.txt >}}
+{{< include examples/example-doc-py.txt >}}
 
 ## Quarto: the basics {auto-animate="true" .smaller}
 
 Added bonus: built-in cross-referencing
 
-{{< include example-doc-py2.txt >}}
+{{< include examples/example-doc-py2.txt >}}
 
 ## Quarto: the basics {auto-animate="true" .smaller}
 
-````md
+````{.md code-line-numbers="43-46"}
 ---
 title: {{< meta example-title >}}
 author: {{< meta example-author >}}
@@ -306,7 +289,7 @@ The aims of this paper are:
 - some other important things
 - maybe a few less important things
 
-{{< includes _matmet.qmd >}}
+{{{< include _matmet.qmd >}}}
 
 ## Results
 
@@ -335,4 +318,5 @@ Quarto is awesome!
 
 ````
 
-Play around in the [sandbox](link-to-binder)
+Play around in the [sandbox](link-to-binder)  
+See the [outputs](examples/example-R.html)

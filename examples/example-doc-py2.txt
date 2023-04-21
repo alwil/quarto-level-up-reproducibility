@@ -1,0 +1,22 @@
+````{.md code-line-numbers="46"}
+---
+title: {{< meta example-title >}}
+author: {{< meta example-author >}}
+keywords: {{< meta example-keywords >}}
+---
+
+{{{< meta keywords >}}}
+
+{{< include examples/intro >}}
+
+{{{< include _matmet.qmd >}}}
+
+## Results
+
+```{{python}}
+{{< include examples/code-py >}}
+```
+
+Blah, blah, blah, something important. Don't believe me? Check out @fig-polar!
+
+````

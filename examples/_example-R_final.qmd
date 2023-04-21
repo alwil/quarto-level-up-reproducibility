@@ -1,5 +1,7 @@
 ---
 output-file: example-R
+metadata-files: 
+  - _metadata.yml
 ---
 
 {{< meta keywords >}}
@@ -15,7 +17,7 @@ The aims of this paper are:
 - some other important things
 - maybe a few less important things
 
-{{< includes _matmet.qmd >}}
+{{< include _matmet.qmd >}}
 
 ## Results
 

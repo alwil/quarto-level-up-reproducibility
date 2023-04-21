@@ -1,0 +1,20 @@
+````{.md code-line-numbers="24-39"}
+---
+title: {{< meta example-title >}}
+author: {{< meta example-author >}}
+keywords: {{< meta example-keywords >}}
+---
+
+{{{< meta keywords >}}}
+
+{{< include examples/intro >}}
+
+{{{< include _matmet.qmd >}}}
+
+## Results
+
+```{{r}}
+{{< include examples/code-R >}}
+```
+
+````
