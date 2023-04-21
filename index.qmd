@@ -69,13 +69,17 @@ Author content using markdown.
 
 <!-- claudiu's mining project -->
 
+[{{< fa book >}} mintEMU](https://github.com/UD3-Lab/mintEMU)
+
 <!-- Bjorn dissertation -->
+
+[{{< fa book >}} Bjorn's dissertation]()
 
 ## Example websites
 
 <!-- websites: R cafe, Rbanism -->
 
-[{{< fa globe >}} R Cafe](delft-rcafe.github.io/home/Index.html)
+[{{< fa globe >}} R Cafe](https://delft-rcafe.github.io/home/Index.html)
 
 [{{< fa globe >}} Rbanism](https://rbanism.github.io/Rbanism/)
 
@@ -121,7 +125,7 @@ We'll start out with a blank Quarto document (*{{< var filename >}}*)
 
 Then add some markdown content
 
-{{< include _example-intro.txt >}}
+{{< include example-intro.txt >}}
 
 ## Quarto: the basics
 
@@ -254,7 +258,7 @@ Of course the real power lies in seemlessly combining text and code (with output
 
 Using any of the supported languages, like R
 
-{{< include _example-doc-R.txt >}}
+{{< include example-doc-R.txt >}}
 
 ## Quarto: the basics {auto-animate="true" .smaller}
 
@@ -268,7 +272,7 @@ Using any of the supported languages, like R, or Python
 
 Added bonus: built-in cross-referencing
 
-{{< include _example-doc-py2.txt >}}
+{{< include example-doc-py2.txt >}}
 
 ## Quarto: the basics {auto-animate="true" .smaller}
 
