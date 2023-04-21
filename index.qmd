@@ -60,6 +60,17 @@ Author content using markdown.
 
 ---
 
+
+## Compared to existing options
+
+RMarkdown
+
+Jupyter
+
+Quarto more streamlined
+
+---
+
 <!-- keep short: should be more hands-on -->
 ![GIPHY](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGFmZThjMTZhMjk3ZGQyM2FmMWFkZTAzNGJjMjQ2OTQ2YTkwYTRkNyZjdD1n/3o6nUXmbq14JmHAnn2/giphy.gif)
 
@@ -69,24 +80,23 @@ Author content using markdown.
 
 <!-- claudiu's mining project -->
 
-[{{< fa book >}} mintEMU](https://github.com/UD3-Lab/mintEMU)
+[{{< fa brands github >}}](https://github.com/UD3-Lab/mintEMU) mintEMU
 
 <!-- Bjorn dissertation -->
-
-[{{< fa book >}} Bjorn's dissertation]()
+[{{< fa globe >}}](https://myphd.netlify.app) [{{< fa brands github >}}](https://github.com/bbartholdy/endgame) PhD dissertation
 
 ## Example websites
 
 <!-- websites: R cafe, Rbanism -->
 
-[{{< fa globe >}} R Cafe](https://delft-rcafe.github.io/home/Index.html)
+[{{< fa globe >}}](https://delft-rcafe.github.io/home/Index.html) R Café
 
-[{{< fa globe >}} Rbanism](https://rbanism.github.io/Rbanism/)
+[{{< fa globe >}}](https://rbanism.github.io/Rbanism/) Rbanism
 
 ## Example presentation
 
 <!-- this presentation -->
-[{{< fa brands github >}} This presentation](https://github.com/bbartholdy/quarto-level-up-reproducibility)
+[{{< fa brands github >}}](https://github.com/bbartholdy/quarto-level-up-reproducibility) This presentation
 
 # The hands-on part (if you missed it) {.inverse}
 
@@ -250,7 +260,7 @@ Of course the real power lies in seemlessly combining text and code (with output
 
 Using any of the supported languages, like R
 
-{{< include _example-doc.txt >}}
+{{< include example-doc.txt >}}
 
 ## Quarto: the basics {auto-animate="true" .smaller}
 
@@ -266,7 +276,7 @@ Of course the real power lies in seemlessly combining text and code (with output
 
 Using any of the supported languages, like R, or Python
 
-{{< include _example-doc-py.txt >}}
+{{< include example-doc-py.txt >}}
 
 ## Quarto: the basics {auto-animate="true" .smaller}
 
