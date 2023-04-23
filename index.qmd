@@ -57,18 +57,86 @@ Author content using markdown.
 
 ---
 
+## Compared to existing options {.smaller}
 
-## Compared to existing options
-
-RMarkdown for R users and Jupyter for Python users
+**RMarkdown** for R users and **Jupyter** for Python users
 
 Quarto more streamlined and specifically tailored to scientific output
 
+:::: {.columns}
+
+::: {.column}
 - built-in functionality
   + cross-refs
   + author metadata
 - more output options
   + including Jupyter
+:::
+::: {.column}
+- formatting features
+  + columns
+  + callouts
+  + footnotes
+:::
+::::
+
+::: {.callout-note}
+I'm a callout
+:::
+
+## Compared to existing options {.smaller}
+
+**RMarkdown** for R users and **Jupyter** for Python users
+
+Quarto more streamlined and specifically tailored to scientific output
+
+:::: {.columns}
+
+::: {.column}
+- built-in functionality
+  + cross-refs
+  + author metadata
+- more output options
+  + including Jupyter
+:::
+::: {.column}
+- formatting features
+  + columns
+  + callouts
+  + footnotes
+:::
+::::
+
+::: {.callout-important}
+I'm an important callout
+:::
+
+## Compared to existing options {.smaller}
+
+**RMarkdown** for R users and **Jupyter** for Python users
+
+Quarto more streamlined and specifically tailored to scientific output
+
+:::: {.columns}
+
+::: {.column}
+- built-in functionality
+  + cross-refs
+  + author metadata
+- more output options
+  + including Jupyter
+:::
+::: {.column}
+- formatting features
+  + columns
+  + callouts
+  + footnotes^[Told you it can do footnotes. Pretty cool, don't you think?]
+:::
+::::
+
+::: {.callout-important}
+I'm an important callout
+:::
 
 ---
 
