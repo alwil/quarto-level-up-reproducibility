@@ -188,6 +188,28 @@ I'm an important callout
 <!-- keep short: should be more hands-on -->
 ![GIPHY](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGFmZThjMTZhMjk3ZGQyM2FmMWFkZTAzNGJjMjQ2OTQ2YTkwYTRkNyZjdD1n/3o6nUXmbq14JmHAnn2/giphy.gif)
 
+## Join us {.smaller}
+
+:::: {.columns}
+
+::: {.column}
+[Join an upcoming R Café](https://delft-rcafe.github.io/home/Index.html#sec-upcoming) at TU Delft!
+
+<br><br>
+![](images/qr-rcafe.png){width=50%}
+
+:::
+::: {.column}
+[Join the Rbanism community](https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIexqwrrc4qZdKgRlneGeIv1NUNUY2UDlXWVdWVzBQWU8xQ0pUTEFGQVBaTSQlQCN0PWcu) for meet-ups, workshops, challenges and more around R in urbanism research!
+
+![](images/qr-rbanism.png){width=50%}
+
+:::
+::::
+
+We run these activities in close collaboration with the [TU Delft Digital Competence Centre](https://www.tudelft.nl/en/library/library-for-researchers/library-for-researchers/setting-up-research/dcc), [TU Delft Research Data Services](https://www.tudelft.nl/en/library/research-data-management), [Open Science Community Delft](https://osc-delft.github.io/), and the [Netherlands eScience Center](https://www.esciencecenter.nl/).
+
+
 # The hands-on part (if you missed it) {.inverse}
 
 <!-- Walkthrough of code -->
