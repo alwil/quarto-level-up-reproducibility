@@ -31,7 +31,7 @@ Claudiu Forgaci
 
 [Bjørn Peare Bartholdy](https://www.tudelft.nl/en/library/research-data-management/r/support/data-stewardship/contact/bjoern-bartholdy)  
 [Data Steward, Delft University of Technology]{style="font-size: 16pt;"}  
-[{{< fa brands github >}}](https://github.com/bbartholdy) [{{< fa brands mastodon >}}](https://fediscience.org/@bjorn) [{{< fa brands linkedin >}}](https://www.linkedin.com/in/bjorn-peare-bartholdy/)
+[{{< fa brands github >}}](https://github.com/bbartholdy) [{{< fa brands mastodon >}}](https://fediscience.org/@bjorn) [{{< fa brands linkedin >}}](https://www.linkedin.com/in/bjorn-peare-bartholdy/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3985-1016)
 
 :::
 ::::
