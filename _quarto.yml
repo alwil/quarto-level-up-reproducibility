@@ -2,10 +2,10 @@ project:
   type: default
   execute-dir: file
   #output-dir: _output
-  #render: 
-  #  - index.qmd
-  #  - examples/_example-R_final.qmd
-  #  - examples/_example-py_final.qmd
+  render: 
+    - index.qmd
+    - examples/_example-R_final.qmd
+    - examples/_example-py_final.qmd
 
 title: Level Up Your Reproducibility Game with Quarto
 author: Bjorn and Claudiu

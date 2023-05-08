@@ -7,16 +7,7 @@ keywords: {{< meta example-keywords >}}
 
 {{{< meta keywords >}}}
 
-## Introdution
-
-This paper will make an important impact in a specific field of science, 
-despite having "negative" results.
-
-The aims of this paper are:
-
-- something important
-- some other important things
-- maybe a few less important things
+{{< include examples/intro >}}
 
 {{{< include _matmet.qmd >}}}
 

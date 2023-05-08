@@ -17,28 +17,34 @@ format:
 
 ## Quarto: What is it? {.center}
 
-An open-source scientific and technical publishing system built on Pandoc.
+A free open-source scientific and technical publishing system built on Pandoc.
 
-Author content using markdown.
+Documents are authored using markdown.
 
-## Quarto: Language support {.center}
+. . .
+
+Did I mention free and open source? 😎
+
+## Quarto Language support {.center}
+
+Code can be seamlessly integrated in Quarto documents
 
 - Python
 - R 
 - Julia
 - Observable
 
-## Quarto: Output formats {auto-animate="true"}
+## Quarto Output formats {auto-animate="true"}
 
 {{< include _output-formats.qmd >}}
 
-## Quarto: Output formats {.smaller auto-animate="true"}
+## Quarto Output formats {.smaller auto-animate="true"}
 
 {{< include _output-formats.qmd >}}
 
 [No, seriously, see the full list [here](https://quarto.org/docs/output-formats/all-formats.html)]{.fragment}
 
-## Quarto: Extensions {.scrollable}
+## Quarto Extensions {.scrollable}
 
 {{< include _extensions.qmd >}}
 
@@ -61,7 +67,7 @@ Author content using markdown.
 
 **RMarkdown** for R users and **Jupyter** for Python users
 
-Quarto more streamlined and specifically tailored to scientific output
+Quarto is more streamlined and specifically tailored to scientific output
 
 :::: {.columns}
 
@@ -88,7 +94,7 @@ I'm a callout
 
 **RMarkdown** for R users and **Jupyter** for Python users
 
-Quarto more streamlined and specifically tailored to scientific output
+Quarto is more streamlined and specifically tailored to scientific output
 
 :::: {.columns}
 
@@ -115,7 +121,7 @@ I'm an important callout
 
 **RMarkdown** for R users and **Jupyter** for Python users
 
-Quarto more streamlined and specifically tailored to scientific output
+Quarto is more streamlined and specifically tailored to scientific output
 
 :::: {.columns}
 
@@ -138,12 +144,22 @@ Quarto more streamlined and specifically tailored to scientific output
 I'm an important callout
 :::
 
+## Active development {.center}
+
+![](https://img.shields.io/github/contributors/quarto-dev/quarto-cli?style=for-the-badge&logo=appveyor)
+![](https://img.shields.io/github/downloads/quarto-dev/quarto-cli/total?style=for-the-badge&logo=appveyor)
+
+![](https://img.shields.io/github/issues-closed/quarto-dev/quarto-cli?style=for-the-badge&logo=appveyor)
+![](https://img.shields.io/github/issues-pr-closed/quarto-dev/quarto-cli?style=for-the-badge&logo=appveyor)
+
+![](https://img.shields.io/github/commit-activity/m/quarto-dev/quarto-cli?style=for-the-badge&logo=appveyor)
+![](https://img.shields.io/github/last-commit/quarto-dev/quarto-cli?style=for-the-badge&logo=appveyor)
+
 ---
 
-<!-- keep short: should be more hands-on -->
-![GIPHY](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGFmZThjMTZhMjk3ZGQyM2FmMWFkZTAzNGJjMjQ2OTQ2YTkwYTRkNyZjdD1n/3o6nUXmbq14JmHAnn2/giphy.gif)
+![GIPHY](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDAxYmY2NmQyYTRlZjc0ZjI0MmI1NDE2Y2M4NGMxNTg5ODliYzBjMSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/zgf1opQOtG05a/giphy.gif)
 
-# Resources {.inverse}
+# Quarto examples {.inverse}
 
 ## Example projects {.center}
 
@@ -166,6 +182,11 @@ I'm an important callout
 
 <!-- this presentation -->
 [{{< fa brands github >}}](https://github.com/bbartholdy/quarto-level-up-reproducibility) This presentation
+
+---
+
+<!-- keep short: should be more hands-on -->
+![GIPHY](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGFmZThjMTZhMjk3ZGQyM2FmMWFkZTAzNGJjMjQ2OTQ2YTkwYTRkNyZjdD1n/3o6nUXmbq14JmHAnn2/giphy.gif)
 
 # The hands-on part (if you missed it) {.inverse}
 
@@ -279,7 +300,9 @@ The aims of this paper are:
 
 ## Quarto: the basics {auto-animate="true"}
 
-And maybe you already wrote the materials and methods section
+And maybe you already wrote the materials and methods section,
+
+which you have in another file called *_matmet.qmd*
 
 ````{.md code-line-numbers="20"}
 ---
@@ -387,4 +410,4 @@ Quarto is awesome!
 ````
 
 Play around in the [sandbox](link-to-binder)  
-See the [outputs](examples/example-R.html)
+See the [R](examples/example-R.html) and [Python](examples/example-py.html) outputs
