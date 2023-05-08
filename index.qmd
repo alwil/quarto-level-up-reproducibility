@@ -13,6 +13,29 @@ format:
       data-background-position: "90% 100%"
 ---
 
+:::: {.columns}
+
+::: {.column style="text-align: center; margin-left: auto; margin-right: auto;"}
+
+![](https://cusp.tbm.tudelft.nl/author/claudiu-forgaci/avatar_hu976355f8d1ffe41a9add862c3c87b32d_1527571_270x270_fill_q90_lanczos_center.jpg){width="300"}
+
+Claudiu Forgaci  
+[Assistant Professor, Delft University of Technology]{style="font-size: 16pt;"}  
+[{{< fa brands github >}}](https://github.com/cforgaci)
+
+:::
+
+::: {.column style="text-align: center; margin-left: auto; margin-right: auto;"}
+
+![](https://d2k0ddhflgrk1i.cloudfront.net/_processed_/2/a/csm_avatar_a441d85745.webp){width="241"}
+
+[Bjørn Peare Bartholdy](https://www.tudelft.nl/en/library/research-data-management/r/support/data-stewardship/contact/bjoern-bartholdy)  
+[Data Steward, Delft University of Technology]{style="font-size: 16pt;"}  
+[{{< fa brands github >}}](https://github.com/bbartholdy) [{{< fa brands mastodon >}}](https://fediscience.org/@bjorn) [{{< fa brands linkedin >}}](https://www.linkedin.com/in/bjorn-peare-bartholdy/)
+
+:::
+::::
+
 # About Quarto {.inverse}
 
 ## Quarto: What is it? {.center}
@@ -181,7 +204,7 @@ I'm an important callout
 ## Example presentation {.center}
 
 <!-- this presentation -->
-[{{< fa brands github >}}](https://github.com/bbartholdy/quarto-level-up-reproducibility) This presentation
+[{{< fa brands github >}}](https://github.com/bbartholdy/quarto-level-up-reproducibility) You're looking at it!
 
 ---
 
