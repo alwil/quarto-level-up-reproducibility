@@ -3,5 +3,5 @@
 *.pdf
 *_files/
 .Rproj.user
-
 /.luarc.json
+.DS_Store
