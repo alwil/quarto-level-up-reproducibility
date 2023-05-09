@@ -40,7 +40,7 @@ format:
 
 ## Quarto: What is it? {.center}
 
-A free open-source scientific and technical publishing system built on Pandoc.
+A free, open-source scientific and technical publishing system built on Pandoc.
 
 Documents are authored using markdown.
 
