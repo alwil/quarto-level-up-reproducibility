@@ -454,5 +454,5 @@ Quarto is awesome!
 
 ````
 
-Play around in the [sandbox](link-to-binder)  
+<!-- Play around in the [sandbox](link-to-binder)  binder not working -->
 See the [R](examples/example-R.html) and [Python](examples/example-py.html) outputs
