@@ -1,7 +1,7 @@
 {
-  "hash": "d6c6ba6da45f9c226e681e8461094309",
+  "hash": "d7b3800622aeffb2d96b3bc9de09bbbc",
   "result": {
-    "markdown": "---\noutput-file: example-R\n---\n\n{{< meta keywords >}}\n\n\n\n\n\n\n\n## Introdution\n\nThis paper will make an important impact in a specific field of science, \ndespite having \"negative\" results.\n\nThe aims of this paper are:\n\n- something important\n- some other important things\n- maybe a few less important things\n\n\n\n\n{{< includes _matmet.qmd >}}\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n::: {.cell-output-display}\n![Temperature and ozone level.](_example-R_final_files/figure-pdf/fig-airquality-1.pdf){#fig-airquality fig-pos='H'}\n:::\n:::",
+    "markdown": "---\noutput-file: example-R\n---\n\n{{< meta keywords >}}\n\n\n\n\n\n\n\n## Introdution\n\nThis paper will make an important impact in a specific field of science, \ndespite having \"negative\" results.\n\nThe aims of this paper are:\n\n- something important\n- some other important things\n- maybe a few less important things\n\n## Materials and Methods\n\nI used some stuff and then I did some things. Here is a link to the\ndetailed materials and methods if you actually want\nto replicate the stuff and things: https://protocols.io.\n\n\n\n## Results\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code  code-fold=\"true\"}\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n::: {.cell-output-display}\n![Temperature and ozone level.](_example-R_final_files/figure-pdf/fig-airquality-1.pdf){#fig-airquality fig-pos='H'}\n:::\n:::\n\n\n\n\nBlah, blah, blah, something important. Don't believe me? Check out @fig-airquality!\n\n## Conclusion\n\nQuarto is awesome!\n",
     "supporting": [
       "_example-R_final_files\\figure-pdf"
     ],

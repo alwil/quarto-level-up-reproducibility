@@ -1,6 +1,7 @@
 ---
 format:
   revealjs:
+    embed-resources: true
     navigation-mode: vertical
     theme: tud-theme.scss
     logo: images/TUDelft_logo_rgb.png
