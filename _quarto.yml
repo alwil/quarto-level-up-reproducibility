@@ -7,8 +7,8 @@ project:
     - examples/_example-R_final.qmd
     - examples/_example-py_final.qmd
 
-title: Level Up Your Reproducibility Game with Quarto
-author: Bjorn and Claudiu
+title: Reproducible Research with Code Notebooks
+author: Bjorn and Aleks
 execute: 
   freeze: true
 example-title: 'Catchy title or pun: the actual title'

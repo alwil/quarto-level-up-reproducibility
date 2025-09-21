@@ -9,7 +9,7 @@ format:
     preview-links: true
     title-slide-attributes: 
       data-background-color: "#00A6D6"
-      data-background-image: "images/TUDelft_logo_white.png"
+      data-background-image: "images/4tu_logo.png"
       data-background-size: "20%"
       data-background-position: "90% 100%"
 ---
@@ -18,7 +18,7 @@ format:
 
 ::: {.column style="text-align: center; margin-left: auto; margin-right: auto;"}
 
-![](https://d2k0ddhflgrk1i.cloudfront.net/_processed_/2/a/csm_avatar_a441d85745.webp){width="241"}
+![](https://filelist.tudelft.nl/_processed_/2/a/csm_avatar_9b5de1e649.webp){width="241"}
 
 [Bjørn Peare Bartholdy](https://www.tudelft.nl/en/library/research-data-management/r/support/data-stewardship/contact/bjoern-bartholdy)  
 [Data Steward, Delft University of Technology]{style="font-size: 16pt;"}  
@@ -28,14 +28,79 @@ format:
 
 ::: {.column style="text-align: center; margin-left: auto; margin-right: auto;"}
 
-![](https://cusp.tbm.tudelft.nl/author/claudiu-forgaci/avatar_hu976355f8d1ffe41a9add862c3c87b32d_1527571_270x270_fill_q90_lanczos_center.jpg){width="300"}
+![](https://tdcc.nl/wp-content/uploads/2025/03/csm_photo_Aleksandra_Wilczynska_8b6976b39a.jpg){width="300"}
 
-[Claudiu Forgaci](https://urbandesigntudelft.nl/team/claudiu-forgaci/)  
-[Assistant Professor, Delft University of Technology]{style="font-size: 16pt;"}  
-[{{< fa brands github >}}](https://github.com/cforgaci) [{{< fa brands linkedin >}}](https://www.linkedin.com/in/claudiuforgaci/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3218-5102)
+Aleksandra Wilczynska
+
+[Data Solutions Engineer, 4TU.ResearchData]{style="font-size: 16pt;"}  
+[{{< fa brands github >}}](https://github.com/alwil) [{{< fa brands linkedin >}}](https://www.linkedin.com/in/alwil/) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-9323-0267)
 
 :::
 ::::
+
+# What is reproducibility? {.inverse}
+
+## Definitions
+![](https://book.the-turing-way.org/build/reproducible-matrix-49e5036f0d702eba21dc5ad9a5dfe3ed.jpg){width="200"}
+
+
+[Turing Way](https://book.the-turing-way.org/reproducible-research/overview/overview-definitions){style="font-size: 16pt;"} 
+
+---
+
+:::: {.columns}
+
+::: {.column}
+ **Reproducibility**: The ability for an independent researcher to obtain the *same results* using the *same data, methods, and procedures* as described in a study.
+
+:::
+
+::: {.column}
+- **Computational Reproducibility**: The ability to obtain the *same results* by running the *same code* and using the *same data* in the *same computing environment*.
+:::
+
+::::
+ 
+
+# Why is reproducibility important? {.inverse}
+
+## Selfish Reasons:
+
+- Avoid disaster
+- Good for your reputation
+- Save time in the future
+- Good for continuity
+- Halp reviewers see your way
+
+[Markowetz, F. Five selfish reasons to work reproducibly. Genome Biol 16, 274 (2015). [https://doi.org/10.1186/s13059-015-0850-7](https://doi.org/10.1186/s13059-015-0850-7)]{style="font-size: 16pt;"} 
+
+## Non-selfish Reasons:
+
+- Enables others to verify and trust your results
+- Facilitates cumulative, self-correcting science: others can build on your work
+- Enhances transparency and accountability 
+- Helps mitigate errors, fraud, or misinterpretation in the literature
+
+
+# Path towards reproducibility {.inverse}
+## Reproducibility is a Spectrum
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDcQY3Bt1OYxNiw_M0T-STeCCvIp73lON2T5V0ZYHKcogwRoudCb5a3ByA&s){width="200"}
+
+[Marwick et al. 2017 [https://doi.org/10.31235/osf.io/72n8g](https://doi.org/10.31235/osf.io/72n8g) ]{style="font-size: 16pt;"}
+
+## What you can do?
+
+- Write code for your research 
+- Documentation: Explain what steps are needed to reproduce the results
+- List dependencies
+- Use version control
+
+::: {.fragment .grow}
+- Use reproducibile workflow tools 
+:::
+- Publish your code and data
+
 
 # About Quarto {.inverse}
 
