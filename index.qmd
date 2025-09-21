@@ -41,30 +41,24 @@ Aleksandra Wilczynska
 # What is reproducibility? {.inverse}
 
 ## Definitions
-![](https://book.the-turing-way.org/build/reproducible-matrix-49e5036f0d702eba21dc5ad9a5dfe3ed.jpg){width="200"}
-
-
-[Turing Way](https://book.the-turing-way.org/reproducible-research/overview/overview-definitions){style="font-size: 16pt;"} 
+![Turing Way](https://book.the-turing-way.org/build/reproducible-matrix-49e5036f0d702eba21dc5ad9a5dfe3ed.jpg)
 
 ---
 
-:::: {.columns}
+**Reproducibility**
 
-::: {.column}
- **Reproducibility**: The ability for an independent researcher to obtain the *same results* using the *same data, methods, and procedures* as described in a study.
+The ability for an independent researcher to obtain the *same results* using the *same data, methods, and procedures* as described in a study.
 
-:::
+. . . 
 
-::: {.column}
-- **Computational Reproducibility**: The ability to obtain the *same results* by running the *same code* and using the *same data* in the *same computing environment*.
-:::
+**Computational Reproducibility**
 
-::::
- 
+The ability to obtain the *same results* by running the *same code* and using the *same data* in the *same computing environment*.
+
 
 # Why is reproducibility important? {.inverse}
 
-## Selfish Reasons:
+## Selfish Reasons
 
 - Avoid disaster
 - Good for your reputation
@@ -72,14 +66,14 @@ Aleksandra Wilczynska
 - Good for continuity
 - Halp reviewers see your way
 
-[Markowetz, F. Five selfish reasons to work reproducibly. Genome Biol 16, 274 (2015). [https://doi.org/10.1186/s13059-015-0850-7](https://doi.org/10.1186/s13059-015-0850-7)]{style="font-size: 16pt;"} 
+[Markowetz, F. Five selfish reasons to work reproducibly. Genome Biol 16, 274 (2015). [https://doi.org/10.1186/s13059-015-0850-7](https://doi.org/10.1186/s13059-015-0850-7)]{style="font-size: 14pt;"} 
 
-## Non-selfish Reasons:
+## Non-selfish Reasons
 
 - Enables others to verify and trust your results
-- Facilitates cumulative, self-correcting science: others can build on your work
+- Facilitates cumulative, self-correcting science
 - Enhances transparency and accountability 
-- Helps mitigate errors, fraud, or misinterpretation in the literature
+- Helps mitigate errors, fraud, or misinterpretation
 
 
 # Path towards reproducibility {.inverse}
@@ -87,7 +81,7 @@ Aleksandra Wilczynska
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDcQY3Bt1OYxNiw_M0T-STeCCvIp73lON2T5V0ZYHKcogwRoudCb5a3ByA&s){width="200"}
 
-[Marwick et al. 2017 [https://doi.org/10.31235/osf.io/72n8g](https://doi.org/10.31235/osf.io/72n8g) ]{style="font-size: 16pt;"}
+[Marwick et al. 2017 [https://doi.org/10.31235/osf.io/72n8g](https://doi.org/10.31235/osf.io/72n8g) ]{style="font-size: 14pt;"}
 
 ## What you can do?
 
