@@ -38,6 +38,12 @@ Aleksandra Wilczynska
 :::
 ::::
 
+# Agenda {.inverse}
+1. Short intro to reproducibility 
+2. Introduction to Quarto
+3. DEMO 
+4. Q&A
+
 # What is reproducibility? {.inverse}
 
 ## Definitions
@@ -47,13 +53,15 @@ Aleksandra Wilczynska
 
 **Reproducibility**
 
-The ability for an independent researcher to obtain the *same results* using the *same data, methods, and procedures* as described in a study.
+The ability for an independent researcher to obtain the ***same results*** using the ***same data, methods, and procedures*** as described in a study.
 
-. . . 
+. . .
 
+<br/><br/> 
 **Computational Reproducibility**
 
-The ability to obtain the *same results* by running the *same code* and using the *same data* in the *same computing environment*.
+The ability to obtain the ***same results*** by running the ***same code*** and using the ***same data*** in the ***same computing environment***.
+
 
 
 # Why is reproducibility important? {.inverse}
